@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ankur.railwayinfo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/trainapp"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+        </activity>
+        <activity android:name=".SignupActivity">
+        </activity>
+        <activity
+            android:name="trainbetweenstation.TrainBetweenStationActivity"
+            android:parentActivityName=".WelcomeActivity" />
+        <activity
+            android:name="trainbetweenstation.TrainBetweenStationInfo"
+            android:parentActivityName="trainfareenquiry.TrainFareEnquiryActivity" />
+        <activity
+            android:name="pnrstatus.PnrStatusActivity"
+            android:parentActivityName=".WelcomeActivity" />
+        <activity
+            android:name="pnrstatus.PnrStatusInfo"
+            android:parentActivityName="pnrstatus.PnrStatusActivity" />
+        <activity
+            android:name="cancelledtrain.CancelledTrainActivity"
+            android:parentActivityName=".WelcomeActivity">
+        </activity>
+        <activity
+            android:name="cancelledtrain.CancelledTrainInfo"
+            android:parentActivityName="cancelledtrain.CancelledTrainActivity" />
+        <activity
+            android:name="rescheduledtrain.RescheduledTrainActivity"
+            android:parentActivityName=".WelcomeActivity">
+        </activity>
+        <activity
+            android:name="rescheduledtrain.RescheduledTrainInfo"
+            android:parentActivityName="rescheduledtrain.RescheduledTrainActivity" />
+        <activity
+            android:name="trainrunningdat.TrainRunningDayActivity"
+            android:parentActivityName=".WelcomeActivity">
+        </activity>
+        <activity
+            android:name="trainrunningdat.TrainRunningDayInfo"
+            android:parentActivityName="trainrunningdat.TrainRunningDayActivity" />
+        <activity
+            android:name="livetrainstatus.LiveTrainStatusActivity"
+            android:parentActivityName=".WelcomeActivity">
+        </activity>
+        <activity
+            android:name="livetrainstatus.LiveTrainStatusInfo"
+            android:parentActivityName="livetrainstatus.LiveTrainStatusActivity" />
+        <activity
+            android:name="trainfareenquiry.TrainFareEnquiryActivity"
+            android:parentActivityName=".WelcomeActivity">
+        </activity>
+        <activity
+            android:name="trainfareenquiry.TrainFareEnquiryInfo"
+            android:parentActivityName="trainfareenquiry.TrainFareEnquiryActivity" />
+        <activity
+            android:name="seatavailability.SeatAvailabilityActivity"
+            android:parentActivityName=".WelcomeActivity">
+        </activity>
+        <activity
+            android:name="seatavailability.SeatAvailabilityInfo"
+            android:parentActivityName="seatavailability.SeatAvailabilityActivity" />
+        <activity
+            android:name="trainarrival.TrainArrivalActivity"
+            android:parentActivityName=".WelcomeActivity">
+        </activity>
+        <activity
+            android:name="trainarrival.TrainArrivalInfo"
+            android:parentActivityName="trainarrival.TrainArrivalActivity" />
+        <activity android:name=".WelcomeActivity">
+        </activity>
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
